@@ -1,0 +1,51 @@
+package org.zoikks.patterns.creational.builder;
+
+/**
+ *
+ * Example of a bean and multiple possibilities for creating it.
+ *
+ * Drawbacks:
+ *  - Not immutable
+ *  - Unclear what the contract is (what is required?)
+ *
+ */
+public class LunchOrderBean {
+
+    private String bread;
+    private String condiments;
+    private String dressing;
+    private String meat;
+
+
+    public String getBread() {
+        return bread;
+    }
+
+    public void setBread(String bread) {
+        this.bread = bread;
+    }
+
+    public String getCondiments() {
+        return condiments;
+    }
+
+    public void setCondiments(String condiments) {
+        this.condiments = condiments;
+    }
+
+    public String getDressing() {
+        return dressing;
+    }
+
+    public void setDressing(String dressing) {
+        this.dressing = dressing;
+    }
+
+    public String getMeat() {
+        return meat;
+    }
+
+    public void setMeat(String meat) {
+        this.meat = meat;
+    }
+}
